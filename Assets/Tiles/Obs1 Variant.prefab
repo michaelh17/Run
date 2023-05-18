@@ -11,6 +11,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: traffic_warning_stand prefab
       objectReference: {fileID: 0}
+    - target: {fileID: 1048912493813344, guid: 883cf758fdbaad44fbf987329131dbfb, type: 3}
+      propertyPath: m_TagString
+      value: Obstacle
+      objectReference: {fileID: 0}
     - target: {fileID: 4739541837513720, guid: 883cf758fdbaad44fbf987329131dbfb, type: 3}
       propertyPath: m_RootOrder
       value: 1
@@ -72,6 +76,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: traffic_warning_stand prefab
       objectReference: {fileID: 0}
+    - target: {fileID: 1048912493813344, guid: 883cf758fdbaad44fbf987329131dbfb, type: 3}
+      propertyPath: m_TagString
+      value: Obstacle
+      objectReference: {fileID: 0}
     - target: {fileID: 4739541837513720, guid: 883cf758fdbaad44fbf987329131dbfb, type: 3}
       propertyPath: m_RootOrder
       value: 2
@@ -131,7 +139,11 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 54202070261513669, guid: 25af8f52dfd073f4e8b471759162365a, type: 3}
       propertyPath: m_Name
-      value: Obs1
+      value: Obs1 Variant
+      objectReference: {fileID: 0}
+    - target: {fileID: 54202070261513669, guid: 25af8f52dfd073f4e8b471759162365a, type: 3}
+      propertyPath: m_TagString
+      value: Obstacle
       objectReference: {fileID: 0}
     - target: {fileID: 1773384851523227428, guid: 25af8f52dfd073f4e8b471759162365a, type: 3}
       propertyPath: m_RootOrder
