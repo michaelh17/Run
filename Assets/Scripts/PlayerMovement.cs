@@ -11,12 +11,14 @@ public class PlayerMovement : MonoBehaviour
     private Vector3 move;
     private float duration = 2.0f;
     private CharacterController controller;
+    public Rigidbody rb;
 
     // Start is called before the first frame update
     void Start()
     {
         anim = gameObject.GetComponent<Animation>();
         controller = GetComponent<CharacterController>();
+        rb = GetComponent<Rigidbody>();
     }
 
     // Update is called once per frame
@@ -33,6 +35,10 @@ public class PlayerMovement : MonoBehaviour
         if (controller.isGrounded)
         {
             velocity = -0.5f;
+            if (Input.GetKeyDown(KeyCode.Space))
+            {
+                velocity = 5f;
+            }
         }
         else
         {
