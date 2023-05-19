@@ -56,8 +56,7 @@ public class PlayerMovement : MonoBehaviour
 
     private void OnControllerColliderHit(ControllerColliderHit hit)
     {
-        if (hit.point.z > transform.position.z + controller.radius)
-        
+        if (hit.gameObject.tag == "Obstacle")
             death();
         
     }

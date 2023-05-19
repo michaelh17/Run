@@ -11,6 +11,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Lamp_7_prefab
       objectReference: {fileID: 0}
+    - target: {fileID: 1941752891830838, guid: 48c232ddc1938bc40b73a1685a1672b1, type: 3}
+      propertyPath: m_TagString
+      value: Obstacle
+      objectReference: {fileID: 0}
     - target: {fileID: 4841937851500512, guid: 48c232ddc1938bc40b73a1685a1672b1, type: 3}
       propertyPath: m_RootOrder
       value: 2
@@ -78,7 +82,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 54202070261513669, guid: 25af8f52dfd073f4e8b471759162365a, type: 3}
       propertyPath: m_Name
-      value: Obs4
+      value: Obs4 Variant
       objectReference: {fileID: 0}
     - target: {fileID: 1773384851523227428, guid: 25af8f52dfd073f4e8b471759162365a, type: 3}
       propertyPath: m_RootOrder
@@ -138,6 +142,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 8696645899113737871}
     m_Modifications:
+    - target: {fileID: 1475335151879778, guid: dd28fe4d5eb7bcb479b5338f128cdf70, type: 3}
+      propertyPath: m_TagString
+      value: Obstacle
+      objectReference: {fileID: 0}
     - target: {fileID: 1646961398783488, guid: dd28fe4d5eb7bcb479b5338f128cdf70, type: 3}
       propertyPath: m_Name
       value: Bin prefab

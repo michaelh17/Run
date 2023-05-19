@@ -11,6 +11,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Traffic_pot prefab
       objectReference: {fileID: 0}
+    - target: {fileID: 1837546083915202, guid: 419d31cd2358c274b93f3ed5fac4773f, type: 3}
+      propertyPath: m_TagString
+      value: Obstacle
+      objectReference: {fileID: 0}
     - target: {fileID: 4647384027779008, guid: 419d31cd2358c274b93f3ed5fac4773f, type: 3}
       propertyPath: m_RootOrder
       value: 2
@@ -78,7 +82,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 54202070261513669, guid: 25af8f52dfd073f4e8b471759162365a, type: 3}
       propertyPath: m_Name
-      value: Obs2Left
+      value: Obs2Right Variant
       objectReference: {fileID: 0}
     - target: {fileID: 1773384851523227428, guid: 25af8f52dfd073f4e8b471759162365a, type: 3}
       propertyPath: m_RootOrder
@@ -141,6 +145,10 @@ PrefabInstance:
     - target: {fileID: 1791774932667290, guid: 419d31cd2358c274b93f3ed5fac4773f, type: 3}
       propertyPath: m_Name
       value: Traffic_pot prefab
+      objectReference: {fileID: 0}
+    - target: {fileID: 1837546083915202, guid: 419d31cd2358c274b93f3ed5fac4773f, type: 3}
+      propertyPath: m_TagString
+      value: Obstacle
       objectReference: {fileID: 0}
     - target: {fileID: 4647384027779008, guid: 419d31cd2358c274b93f3ed5fac4773f, type: 3}
       propertyPath: m_RootOrder
