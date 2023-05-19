@@ -11,6 +11,7 @@ public class PlayerMovement : MonoBehaviour
     private Vector3 move;
     private float duration = 2.0f;
     private bool isDead = false;
+    private float startTime;
     private CharacterController controller;
     public Rigidbody rb;
 
@@ -20,6 +21,7 @@ public class PlayerMovement : MonoBehaviour
         anim = gameObject.GetComponent<Animation>();
         controller = GetComponent<CharacterController>();
         rb = GetComponent<Rigidbody>();
+        startTime = Time.time;
     }
 
     // Update is called once per frame
@@ -29,7 +31,7 @@ public class PlayerMovement : MonoBehaviour
         if (isDead)
             return;
 
-        if (Time.time < duration)
+        if (Time.time - startTime < duration)
         {
             controller.Move(Vector3.forward * speed * Time.deltaTime);
             return;
