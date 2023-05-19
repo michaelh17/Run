@@ -10,6 +10,7 @@ public class PlayerMovement : MonoBehaviour
     private float gravity = 12.0f;
     private Vector3 move;
     private float duration = 2.0f;
+    private bool isDead = false;
     private CharacterController controller;
     public Rigidbody rb;
 
@@ -25,6 +26,9 @@ public class PlayerMovement : MonoBehaviour
     void Update()
     {
 
+        if (isDead)
+            return;
+
         if (Time.time < duration)
         {
             controller.Move(Vector3.forward * speed * Time.deltaTime);
@@ -34,10 +38,12 @@ public class PlayerMovement : MonoBehaviour
 
         if (controller.isGrounded)
         {
+           
             velocity = -0.5f;
             if (Input.GetKeyDown(KeyCode.Space))
             {
-                velocity = 5f;
+               
+               velocity = 5f;
             }
         }
         else
@@ -64,6 +70,9 @@ public class PlayerMovement : MonoBehaviour
 
     private void death()
     {
-        Debug.Log("mati");
+        anim.Play("Dizzy");
+        isDead = true;
+        GetComponent<Scoring>().OnDeath();
+        
     }
 }
