@@ -7,6 +7,7 @@ public class Scoring : MonoBehaviour
     private float score = 0.0f;
     private bool isDead = false;
     public Text scoreboard;
+    public EndgameScreen screen;
 
     // Start is called before the first frame update
     void Start()
@@ -28,6 +29,9 @@ public class Scoring : MonoBehaviour
     public void OnDeath()
     {
         isDead = true;
+        screen.TriggerEndMenu(score);
     }
+
+    
 
 }

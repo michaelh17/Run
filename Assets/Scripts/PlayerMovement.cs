@@ -38,11 +38,11 @@ public class PlayerMovement : MonoBehaviour
 
         if (controller.isGrounded)
         {
-           
+            anim.CrossFade("Run");
             velocity = -0.5f;
             if (Input.GetKeyDown(KeyCode.Space))
             {
-               
+            //    anim.CrossFade("Runtojumpspring");
                velocity = 5f;
             }
         }
