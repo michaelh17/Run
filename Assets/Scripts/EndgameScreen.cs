@@ -30,6 +30,7 @@ public class EndgameScreen : MonoBehaviour
 
     public void TriggerEndMenu(float score)
     {
+
         gameObject.SetActive(true);
         scoreText.text = ((int)score).ToString();
         isShowed = true;

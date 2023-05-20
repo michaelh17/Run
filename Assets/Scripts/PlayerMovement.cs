@@ -61,12 +61,13 @@ public class PlayerMovement : MonoBehaviour
         controller.Move(move * Time.deltaTime);
     }
 
-
     private void OnControllerColliderHit(ControllerColliderHit hit)
     {
         if (hit.gameObject.tag == "Obstacle")
             death();
-        
+
+     
+
     }
 
 
@@ -75,6 +76,7 @@ public class PlayerMovement : MonoBehaviour
         anim.Play("Dizzy");
         isDead = true;
         GetComponent<Scoring>().OnDeath();
+        
         
     }
 }

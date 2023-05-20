@@ -9,7 +9,6 @@ public class pauseController : MonoBehaviour
 {
     public Button PauseButton;
     public GameObject pauseMenu;
-    public float temp = 0f;
 
     // Start is called before the first frame update
     void Start()
@@ -26,13 +25,9 @@ public class pauseController : MonoBehaviour
         
     }
 
-    public void pauseButtonTrigger()
-    {
-        temp = Time.timeScale;
+    public void pauseButtonTrigger() { 
         Time.timeScale = 0;
         pauseMenu.gameObject.SetActive(true);
-
-
     }
 
     public void Resume()
@@ -44,9 +39,7 @@ public class pauseController : MonoBehaviour
     public void Restart()
     {
         //GetComponent<StartScreen>().Play();
-         SceneManager.LoadScene("GameStart");
-        
-
+        SceneManager.LoadScene("GameStart");
     }
 
     public void backtoMenu()

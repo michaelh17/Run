@@ -17,7 +17,7 @@ public class CameraMovement : MonoBehaviour
     void Start()
     {
        move = GameObject.FindGameObjectWithTag ("Player").transform;
-        start = transform.position - move.position;
+       start = transform.position - move.position;
     }
 
     // Update is called once per frame
