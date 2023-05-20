@@ -22,6 +22,7 @@ public class PlayerMovement : MonoBehaviour
         controller = GetComponent<CharacterController>();
         rb = GetComponent<Rigidbody>();
         startTime = Time.time;
+        audioManager.aud.Play(0);
     }
 
     // Update is called once per frame
@@ -44,7 +45,7 @@ public class PlayerMovement : MonoBehaviour
             velocity = -0.5f;
             if (Input.GetKeyDown(KeyCode.Space))
             {
-            //    anim.CrossFade("Runtojumpspring");
+             audioManager.aud.Play(1);
                velocity = 5f;
             }
         }
@@ -73,10 +74,12 @@ public class PlayerMovement : MonoBehaviour
 
     private void death()
     {
+        audioManager.aud.Play(2);
         anim.Play("Dizzy");
         isDead = true;
+
+        audioManager.aud.StopSong();
         GetComponent<Scoring>().OnDeath();
-        
         
     }
 }

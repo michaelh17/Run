@@ -15,6 +15,7 @@ public class EndgameScreen : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
+       
         gameObject.SetActive(false);
     }
 
@@ -30,7 +31,8 @@ public class EndgameScreen : MonoBehaviour
 
     public void TriggerEndMenu(float score)
     {
-
+        audioManager.aud.Play(2);
+        audioManager.aud.Play(3);
         gameObject.SetActive(true);
         scoreText.text = ((int)score).ToString();
         isShowed = true;
